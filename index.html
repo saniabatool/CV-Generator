@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Portfolio Generator</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+
+
+
+  <div class="container">
+    <h1>📄CV Generator</h1>
+    <form id="portfolioForm">
+      <label for="name">Your Name</label>
+      <input type="text" id="name" placeholder="e.g. Sania Batool" required>
+
+      <label for="skills">Your Skills</label>
+      <input type="text" id="skills" placeholder="e.g. HTML, CSS, JavaScript" required>
+
+      <label for="about">About Me</label>
+      <textarea id="about" placeholder="Write a brief introduction about yourself" rows="4" required></textarea>
+
+      <label for="photo">Upload Your Photo</label>
+      <input type="file" id="photo" accept="image/*">
+
+      <label for="education">Your Education</label>
+      <textarea id="education" rows="3"placeholder="Write about your education" required></textarea>
+
+      <label for="experience">Your Experience</label>
+      <textarea id="experience" rows="3" placeholder="Write  about your experience" required></textarea>
+
+      <label for="projects">Your Projects</label>
+      <textarea id="projects" rows="5"placeholder="Write about your projects" required></textarea>
+
+      <label for="contactNumber">Your Contact Number</label>
+      <input type="text" id="contactNumber" placeholder="e.g. 123-456-7890" required>
+
+      <label for="email">Your Email</label>
+      <input type="email" id="email" placeholder="e.g. example@gmail.com" required>
+
+      <label for="theme">Choose Theme</label>
+      <select id="theme">
+        <option value="light">🌞 Light</option>
+        <option value="dark">🌚 Dark</option>
+        <option value="blue">🌊 Blue</option>
+      </select>
+
+      <button type="submit">✨ Generate Portfolio</button>
+    </form>
+
+    <div id="actions">
+      <button id="downloadBtn">⬇️ Download</button>
+      <button id="previewBtn">👁️ Preview</button>
+      <button id="copyLinkBtn">📎 Copy Link</button>
+      <p id="copiedMessage">✔ Link copied!</p>
+    </div>
+  </div>
+
+
+
+  <script src="script.js"></script>
+</body>
+</html>

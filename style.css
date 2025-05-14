@@ -1,0 +1,98 @@
+body, h1, label, input, textarea, button {
+  margin: 0;
+  padding: 0;
+  font-family: 'Arial', sans-serif;
+}
+
+body {
+  background: #f4f7fa;
+  color: #333;
+  margin: 0;
+  padding: 0;
+}
+
+.container {
+  max-width: 800px;
+  margin: 50px auto;
+  padding: 30px;
+  background: #fff;
+  border-radius: 12px;
+  box-shadow: 0 15px 30px rgba(0, 0, 0, 0.1);
+}
+
+h1 {
+  text-align: center;
+  font-size: 30px;
+  color: #333;
+  margin-bottom: 30px;
+}
+
+label {
+  font-weight: bold;
+  margin-bottom: 5px;
+  color: #444;
+}
+
+input, textarea, select, button {
+  width: 100%;
+  padding: 12px;
+  margin-bottom: 15px;
+  border-radius: 8px;
+  border: 1px solid #ddd;
+  font-size: 16px;
+  background-color: #f9f9f9;
+}
+
+input[type="file"] {
+  padding: 0;
+  background-color: transparent;
+}
+
+button {
+  background-color: #0077ff;
+  color: white;
+  border: none;
+  font-size: 16px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+button:hover {
+  background-color: #005bb5;
+}
+
+#actions {
+  display: none;
+  text-align: center;
+  margin-top: 20px;
+}
+
+#actions button {
+  margin: 5px;
+  padding: 10px 20px;
+  font-size: 16px;
+}
+
+#copiedMessage {
+  color: green;
+  display: none;
+  font-weight: bold;
+  margin-top: 10px;
+}
+
+textarea {
+  resize: vertical;
+}
+
+select {
+  background-color: #fff;
+  color: #444;
+  border: 1px solid #ccc;
+}
+
+@media (max-width: 600px) {
+  .container {
+    padding: 20px;
+    max-width: 90%;
+  }
+}
